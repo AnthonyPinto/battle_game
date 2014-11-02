@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Battle Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+		
+    <script type="text/javascript" src="javascripts/game.js" ></script>
+    <script type="text/javascript" src="javascripts/game_ui.js" ></script>
+
+
+    </script>
+  </head>
+  <body>
+		BATTLE GAME!!!
+    <canvas></canvas>
+    <script type="text/javascript" charset="utf-8">
+	    var canvasEl = document.getElementsByTagName("canvas")[0];
+	    canvasEl.height = window.innerHeight - 50;
+	    canvasEl.width = window.innerWidth - 50;
+			
+			var socket = io();
+			
+	    // $(function () {
+	    //   var game = new Battle.Game(socket, canvas);
+	    //   var gameUI = new Battle.GameUI(game);
+	    // });
+	  </script>
+  </body>
+</html>
